@@ -41,9 +41,9 @@ public class LinkedListDeque<stuff>{
 
     public boolean isEmpty(){
         if(size==0){
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
     public int size(){
@@ -52,9 +52,10 @@ public class LinkedListDeque<stuff>{
 
     public void printDeque(){
         Node nowNode=sentinel.next;
-        while(nowNode!=null){
+        while(nowNode!=sentinel){
             StdOut.print(nowNode.item);
             StdOut.print(' ');
+            nowNode=nowNode.next;
         }
     }
 
@@ -62,12 +63,16 @@ public class LinkedListDeque<stuff>{
         stuff firstItem=sentinel.next.item;
         sentinel.next=sentinel.next.next;
 
+        --size;
+
         return firstItem;
     }
 
     public stuff removeLast(){
         stuff lastItem=sentinel.prev.item;
         sentinel.prev=sentinel.prev.prev;
+
+        --size;
 
         return lastItem;
     }

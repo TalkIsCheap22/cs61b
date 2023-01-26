@@ -10,8 +10,8 @@ public class NBody{
         In in =new In(file_name);
         int n=in.readInt();
         in.readDouble();
-        Planet[] planets=new Planet[5];
-        for(int i=0;i<n;i+=1){
+        Planet[] planets=new Planet[n];
+        for(int i=0;i<n;++i){
             double xxP=in.readDouble();
             double yyP=in.readDouble();
             double xxV=in.readDouble();
