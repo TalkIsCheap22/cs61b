@@ -1,0 +1,21 @@
+基础数据结构
+1 Array
+
+2 Linked List
+
+3 Hash Table
+
+4 Tree
+~BST
+~B Tree
+～Red Black Tree
+~Heap
+
+高级数据结构
+Stack		(Array / Linked List)
+
+Set/Map	(Tree / Hash Map / Array / Linked List)
+
+Priority Queue	(Heap / Linked List)
+
+DisjointSets		(WQUPC / Weighted QU / Quick Find / Quick Union)
